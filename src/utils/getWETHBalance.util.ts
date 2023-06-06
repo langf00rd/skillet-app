@@ -1,5 +1,9 @@
 import { ethers } from "ethers";
-
+/**
+ * Gets WETH balance of an address
+ * @param address
+ * @returns WETH balance as `string`
+ */
 export default async function getWETHBalance(
   address: string
 ): Promise<string | undefined> {
