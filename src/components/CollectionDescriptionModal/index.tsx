@@ -4,7 +4,7 @@ import { Collection } from "../../interfaces";
 import { FiX } from "react-icons/fi";
 import { motion } from "framer-motion";
 
-export default function CollectionModal(props: {
+export default function CollectionDescriptionModal(props: {
   show: boolean;
   onHide: () => void;
   collection: Collection | undefined;

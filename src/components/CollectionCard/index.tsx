@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Collection } from "../../interfaces";
 import { useStore } from "../../store";
 import { FiMoreHorizontal } from "react-icons/fi";
-import CollectionModal from "../CollectionModal";
 import { useState } from "react";
+import CollectionDescriptionModal from "../CollectionDescriptionModal";
 
 export default function CollectionCard(props: { collection: Collection }) {
   const [showCollectionModal, setShowCollectionModal] = useState(false);
@@ -18,7 +18,7 @@ export default function CollectionCard(props: { collection: Collection }) {
 
   return (
     <>
-      <CollectionModal
+      <CollectionDescriptionModal
         collection={selectedCollection}
         show={showCollectionModal}
         onHide={handleShowCollectionModal}

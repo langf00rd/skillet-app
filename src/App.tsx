@@ -1,7 +1,6 @@
 import { useAddress } from "@thirdweb-dev/react";
 import CollectionAssets from "./components/CollectionAssets";
 import { useState } from "react";
-import CollectionModal from "./components/CollectionModal";
 import Collections from "./components/Collections";
 import { useStore } from "./store";
 import Header from "./components/Header";
