@@ -20,3 +20,18 @@ html {
 a {
   @apply text-primary underline hover:no-underline;
 }
+
+.loader {
+  @apply w-[40px] h-[40px] border-[4px] border-primary rounded-full;
+  animation: rotation 1s linear infinite;
+  border-bottom-color: transparent;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
