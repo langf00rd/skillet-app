@@ -17,7 +17,7 @@ export default function Collections(props: {
 
   return (
     <>
-      <h2 className="text-xl font-[600] mb-5">Collections</h2>
+      <h2 className="text-xl font-[600] mb-5">Select Collection</h2>
       <ul className="flex justify-between overflow-x-scroll gap-5">
         {data &&
           data.map((collection: Collection, index: number) => (

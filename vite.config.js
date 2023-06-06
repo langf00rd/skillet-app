@@ -10,7 +10,7 @@ export default defineConfig({
     },
   },
   define: {
-    global: 'window',
+    global: 'window', // set global to `window` to solve error when packages want to access the `global` object 
     "process.env": {},
   },
 })
