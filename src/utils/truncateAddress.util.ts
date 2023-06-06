@@ -4,6 +4,7 @@
  * @returns Truncated address. eg `0x12...345`
  */
 export function truncateAddress(address: string) {
+  if (!address) return;
   return `${address.substring(0, 4)}...${address.substring(
     address.length - 4,
     address.length
